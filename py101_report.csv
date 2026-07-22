@@ -1,0 +1,4 @@
+trainee_id,trainee_name,average_score,attendance_percentage,status,certificate_eligible
+101,Maha Altalk,88.5,100.0,Passed,True
+102,Sara Ahmed,70.0,80.0,Passed,True
+103,Omar Ali,56.5,40.0,Failed,False

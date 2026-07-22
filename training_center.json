@@ -1,0 +1,189 @@
+{
+  "name": "Future Skills Training Center",
+  "courses": [
+    {
+      "code": "PY101",
+      "title": "Python Fundamentals",
+      "capacity": 5,
+      "passing_score": 60,
+      "minimum_attendance": 80,
+      "schedule": [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday"
+      ],
+      "enrolled_trainees": [
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "code": "NP201",
+      "title": "Data Analysis with NumPy",
+      "capacity": 4,
+      "passing_score": 60,
+      "minimum_attendance": 80,
+      "schedule": [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday"
+      ],
+      "enrolled_trainees": [
+        104,
+        101
+      ]
+    },
+    {
+      "code": "OO301",
+      "title": "Object-Oriented Programming",
+      "capacity": 2,
+      "passing_score": 70,
+      "minimum_attendance": 80,
+      "schedule": [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday"
+      ],
+      "enrolled_trainees": [
+        105,
+        102
+      ]
+    }
+  ],
+  "trainees": [
+    {
+      "trainee_id": 101,
+      "name": "Maha Altalk",
+      "email": "maha@example.com",
+      "enrolled_courses": [
+        "PY101",
+        "NP201"
+      ],
+      "attendance": {
+        "PY101": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "NP201": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "scores": {
+        "PY101": [
+          90.0,
+          87.0
+        ],
+        "NP201": [
+          95.0,
+          91.0
+        ]
+      }
+    },
+    {
+      "trainee_id": 102,
+      "name": "Sara Ahmed",
+      "email": "sara@example.com",
+      "enrolled_courses": [
+        "PY101",
+        "OO301"
+      ],
+      "attendance": {
+        "PY101": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OO301": [
+          1,
+          2,
+          3
+        ]
+      },
+      "scores": {
+        "PY101": [
+          72.0,
+          68.0
+        ],
+        "OO301": [
+          75.0,
+          80.0
+        ]
+      }
+    },
+    {
+      "trainee_id": 103,
+      "name": "Omar Ali",
+      "email": "omar@example.com",
+      "enrolled_courses": [
+        "PY101"
+      ],
+      "attendance": {
+        "PY101": [
+          1,
+          2
+        ]
+      },
+      "scores": {
+        "PY101": [
+          55.0,
+          58.0
+        ]
+      }
+    },
+    {
+      "trainee_id": 104,
+      "name": "Lina Saad",
+      "email": "lina@example.com",
+      "enrolled_courses": [
+        "NP201"
+      ],
+      "attendance": {
+        "NP201": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "scores": {
+        "NP201": [
+          88.0,
+          84.0
+        ]
+      }
+    },
+    {
+      "trainee_id": 105,
+      "name": "Nora Fahd",
+      "email": "nora@example.com",
+      "enrolled_courses": [
+        "OO301"
+      ],
+      "attendance": {
+        "OO301": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "scores": {}
+    }
+  ]
+}
