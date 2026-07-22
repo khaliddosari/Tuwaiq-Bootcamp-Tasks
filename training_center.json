@@ -63,8 +63,8 @@
       "name": "Maha Altalk",
       "email": "maha@example.com",
       "enrolled_courses": [
-        "PY101",
-        "NP201"
+        "NP201",
+        "PY101"
       ],
       "attendance": {
         "PY101": [
@@ -98,8 +98,8 @@
       "name": "Sara Ahmed",
       "email": "sara@example.com",
       "enrolled_courses": [
-        "PY101",
-        "OO301"
+        "OO301",
+        "PY101"
       ],
       "attendance": {
         "PY101": [
