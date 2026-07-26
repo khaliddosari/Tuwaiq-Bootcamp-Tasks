@@ -1,0 +1,15 @@
+column,type,description,expected_rule
+customer_id,string,Unique customer identifier,"Unique, non-missing, format CUST-0001"
+age,numeric,Customer age,Expected approximately 18–100
+gender,categorical,Customer gender,Female or Male; missing values possible
+city,categorical,Customer city,Saudi city; missing values possible
+tenure_months,numeric,Months subscribed,Non-negative and plausible
+monthly_spend,numeric,Average monthly spend,Non-negative; contains outliers
+support_calls,numeric,Support-call count,Non-negative count
+satisfaction_score,numeric,Satisfaction score,Expected range 1–5
+contract_type,categorical,Subscription contract,"Monthly, Quarterly, Annual"
+payment_method,categorical,Payment method,May contain missing values
+is_premium,boolean,Premium indicator,True or False
+purchases_last_6m,numeric,Six-month purchase count,Non-negative count
+signup_date,date,Signup date,Stored as text in CSV
+churn,target,Customer churn,Yes or No

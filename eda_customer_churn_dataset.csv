@@ -1,0 +1,329 @@
+customer_id,age,gender,city,tenure_months,monthly_spend,support_calls,satisfaction_score,contract_type,payment_method,is_premium,purchases_last_6m,signup_date,churn
+CUST-0001,39.0,Male,Dammam,28.0,123.92,2.0,3.4,Monthly,Digital Wallet,False,7.0,2023-09-20,No
+CUST-0002,25.0,Male,Riyadh,9.0,97.33,2.0,3.08,Annual,Cash,False,2.0,2020-04-19,No
+CUST-0003,44.0,Female,Madinah,12.0,86.78,1.0,4.13,Annual,Bank Transfer,False,4.0,2024-02-08,No
+CUST-0004,46.0,Male,Riyadh,67.0,104.4,2.0,3.7,Monthly,Credit Card,False,8.0,2024-04-08,No
+CUST-0005,18.0,Female,Madinah,1.0,97.94,6.0,,Monthly,Credit Card,False,5.0,2021-04-20,Yes
+CUST-0006,-4.0,Male,Riyadh,24.0,53.54,5.0,3.04,Monthly,Bank Transfer,False,6.0,2020-11-12,No
+CUST-0007,37.0,Female,Jeddah,66.0,183.16,2.0,3.14,Monthly,Cash,False,8.0,2023-08-10,No
+CUST-0008,33.0,Male,Jeddah,44.0,218.41,3.0,3.78,Quarterly,Bank Transfer,False,5.0,2021-06-23,No
+CUST-0009,36.0,Female,Riyadh,6.0,174.43,3.0,2.63,Monthly,Digital Wallet,True,8.0,2025-05-31,No
+CUST-0010,27.0,Male,Madinah,34.0,127.81,5.0,2.92,Annual,Bank Transfer,False,3.0,2024-06-15,No
+CUST-0011,46.0,Male,Riyadh,70.0,214.75,0.0,4.12,Annual,Credit Card,True,15.0,2025-06-28,No
+CUST-0012,45.0,Male,Riyadh,29.0,123.54,3.0,3.66,Annual,Bank Transfer,True,16.0,2023-01-27,No
+CUST-0013,37.0,Male,Riyadh,39.0,176.8,0.0,4.38,Monthly,Digital Wallet,True,14.0,2025-05-24,No
+CUST-0014,48.0,Male,Dammam,39.0,74.65,2.0,3.57,Monthly,Digital Wallet,False,9.0,2020-01-30,No
+CUST-0015,41.0,Male,Madinah,48.0,72.15,3.0,2.46,Annual,Bank Transfer,False,8.0,2021-08-31,No
+CUST-0016,27.0,Female,Tabuk,14.0,145.68,4.0,2.22,Annual,Credit Card,False,0.0,2020-01-05,No
+CUST-0017,40.0,Male,Riyadh,61.0,146.65,0.0,3.92,Monthly,Digital Wallet,False,6.0,2023-11-23,No
+CUST-0018,25.0,Female,Jeddah,72.0,247.49,1.0,4.01,Annual,Credit Card,True,17.0,2022-12-08,No
+CUST-0019,46.0,Male,Riyadh,11.0,71.28,3.0,3.06,Monthly,Cash,False,2.0,2021-08-27,No
+CUST-0020,35.0,Female,Jeddah,59.0,128.85,0.0,4.71,Annual,Credit Card,False,7.0,2021-10-02,No
+CUST-0021,34.0,Male,Tabuk,59.0,253.66,2.0,3.56,Monthly,Credit Card,True,12.0,2023-09-13,No
+CUST-0022,29.0,Male,Dammam,54.0,128.27,2.0,3.11,Monthly,Bank Transfer,False,6.0,2021-01-13,No
+CUST-0023,49.0,Female,Jeddah,27.0,,3.0,3.28,Quarterly,Bank Transfer,False,3.0,2022-12-16,No
+CUST-0024,34.0,Male,,34.0,100.54,4.0,3.33,Monthly,Bank Transfer,False,6.0,2023-07-12,No
+CUST-0025,31.0,Male,Tabuk,61.0,125.12,2.0,3.95,Monthly,Bank Transfer,False,7.0,2021-05-18,No
+CUST-0026,32.0,Male,Jeddah,12.0,33.96,4.0,4.4,Monthly,Cash,False,2.0,2021-04-24,No
+CUST-0027,42.0,Female,Riyadh,60.0,66.78,5.0,2.47,Monthly,Bank Transfer,False,7.0,2022-01-13,No
+CUST-0028,40.0,,Jeddah,67.0,134.55,1.0,3.97,Annual,Bank Transfer,False,11.0,2023-05-28,No
+CUST-0029,41.0,Male,Riyadh,50.0,126.98,2.0,4.02,Monthly,Bank Transfer,False,7.0,2021-06-18,No
+CUST-0030,41.0,Female,Riyadh,25.0,52.49,2.0,3.72,Quarterly,Credit Card,False,5.0,2022-03-07,No
+CUST-0031,60.0,Female,Riyadh,41.0,198.89,1.0,3.69,Annual,Bank Transfer,True,13.0,2023-02-15,No
+CUST-0032,32.0,Female,Jeddah,4.0,76.28,3.0,2.45,Monthly,Credit Card,False,3.0,2021-01-27,No
+CUST-0033,30.0,Male,Dammam,68.0,69.34,7.0,2.01,Monthly,Digital Wallet,False,9.0,2023-04-09,No
+CUST-0034,27.0,Female,Riyadh,25.0,65.47,4.0,2.48,Annual,Credit Card,False,7.0,2020-10-17,No
+CUST-0035,43.0,Male,Jeddah,5.0,174.75,3.0,2.34,Annual,Cash,True,9.0,2020-10-26,No
+CUST-0036,48.0,Male,Tabuk,58.0,1250.0,2.0,3.22,Quarterly,Bank Transfer,False,8.0,2021-05-12,No
+CUST-0037,35.0,Female,Dammam,48.0,82.42,2.0,3.06,Annual,Digital Wallet,False,8.0,2021-08-24,No
+CUST-0038,27.0,Male,Jeddah,45.0,210.05,2.0,4.12,Monthly,Bank Transfer,True,10.0,2020-03-03,No
+CUST-0039,27.0,Male,Riyadh,4.0,195.18,4.0,3.57,Monthly,Credit Card,True,5.0,2025-07-12,No
+CUST-0040,43.0,Female,Madinah,55.0,157.7,2.0,3.15,Annual,Digital Wallet,False,10.0,2021-10-09,No
+CUST-0041,44.0,Female,Riyadh,46.0,117.26,4.0,3.01,Monthly,Digital Wallet,False,9.0,2024-08-16,No
+CUST-0042,42.0,Female,Riyadh,58.0,202.42,1.0,,Annual,Digital Wallet,True,14.0,2025-03-09,No
+CUST-0043,29.0,Female,Tabuk,60.0,113.97,0.0,3.98,Monthly,Bank Transfer,False,10.0,2024-08-08,No
+CUST-0044,39.0,Female,Jeddah,16.0,103.97,2.0,4.0,Annual,Digital Wallet,False,5.0,2024-10-11,No
+CUST-0045,37.0,Male,Dammam,16.0,94.43,5.0,3.44,Monthly,Digital Wallet,False,6.0,2020-07-29,Yes
+CUST-0046,38.0,Female,Jeddah,67.0,165.73,1.0,3.56,Monthly,Digital Wallet,False,12.0,2022-02-20,No
+CUST-0047,46.0,Female,Dammam,39.0,117.52,1.0,4.7,Monthly,Bank Transfer,False,9.0,2024-04-15,No
+CUST-0048,38.0,Male,Riyadh,32.0,133.86,1.0,3.03,Monthly,Digital Wallet,False,6.0,2023-04-24,No
+CUST-0049,145.0,Male,Riyadh,21.0,96.41,1.0,3.21,Annual,Digital Wallet,False,9.0,2020-01-12,No
+CUST-0050,37.0,Male,Riyadh,47.0,149.16,2.0,4.2,Monthly,Cash,False,8.0,2023-04-06,No
+CUST-0051,39.0,Male,Riyadh,55.0,160.98,4.0,4.27,Monthly,Bank Transfer,False,10.0,2024-08-16,No
+CUST-0052,43.0,,Madinah,1.0,42.94,1.0,4.34,Monthly,Bank Transfer,False,4.0,2024-10-06,Yes
+CUST-0053,20.0,Female,Riyadh,40.0,50.71,1.0,3.99,Monthly,Digital Wallet,False,8.0,2022-03-17,No
+CUST-0054,32.0,Male,Jeddah,72.0,288.22,4.0,1.75,Annual,Bank Transfer,True,12.0,2021-05-11,No
+CUST-0055,31.0,Male,Madinah,21.0,102.08,2.0,2.43,Monthly,Digital Wallet,False,7.0,2021-10-12,Yes
+CUST-0056,29.0,Male,Madinah,21.0,33.09,1.0,4.1,Annual,Bank Transfer,False,12.0,2021-09-14,Yes
+CUST-0057,33.0,Female,Jeddah,64.0,115.42,2.0,3.51,Monthly,Credit Card,False,8.0,2021-12-28,No
+CUST-0058,52.0,Male,Jeddah,5.0,102.52,4.0,,Quarterly,Digital Wallet,False,4.0,2021-09-25,No
+CUST-0059,26.0,Male,Tabuk,29.0,,1.0,4.06,Monthly,Credit Card,False,5.0,2022-08-18,No
+CUST-0060,47.0,Female,Dammam,33.0,88.38,7.0,2.41,Monthly,Credit Card,False,5.0,2020-03-26,Yes
+CUST-0061,18.0,Male,Madinah,58.0,182.83,2.0,4.35,Annual,Digital Wallet,False,13.0,2021-07-31,No
+CUST-0062,32.0,Male,Tabuk,10.0,129.34,1.0,4.11,Annual,Digital Wallet,True,6.0,2021-10-22,No
+CUST-0063,38.0,Female,Madinah,32.0,162.26,0.0,5.0,Annual,Digital Wallet,True,9.0,2020-11-18,No
+CUST-0064,42.0,Female,Riyadh,11.0,174.5,4.0,3.19,Monthly,Credit Card,True,4.0,2025-01-17,No
+CUST-0065,44.0,Male,Jeddah,57.0,231.37,1.0,3.95,Monthly,Credit Card,True,11.0,2023-11-19,Yes
+CUST-0066,45.0,Female,Riyadh,46.0,137.97,3.0,,Quarterly,Cash,False,3.0,2025-03-30,No
+CUST-0067,32.0,Female,Dammam,36.0,141.49,4.0,2.54,Monthly,Credit Card,False,8.0,2023-03-25,Yes
+CUST-0068,31.0,Female,Tabuk,29.0,108.85,7.0,,Annual,Credit Card,False,13.0,2020-08-18,No
+CUST-0069,45.0,Female,Jeddah,12.0,185.33,3.0,3.7,Quarterly,Credit Card,True,7.0,2025-03-14,No
+CUST-0070,34.0,Male,Jeddah,67.0,134.63,2.0,3.99,Quarterly,,False,6.0,2022-08-19,No
+CUST-0071,22.0,Male,Riyadh,47.0,208.89,1.0,4.36,Annual,Digital Wallet,True,14.0,2023-12-08,No
+CUST-0072,24.0,Female,Tabuk,23.0,99.06,3.0,4.68,Annual,Digital Wallet,False,3.0,2022-03-11,No
+CUST-0073,26.0,Male,Riyadh,30.0,195.53,3.0,3.98,Monthly,Digital Wallet,True,13.0,2022-11-03,No
+CUST-0074,41.0,Male,Riyadh,53.0,155.34,2.0,2.7,Monthly,Credit Card,False,8.0,2022-10-24,No
+CUST-0075,38.0,Female,Riyadh,52.0,146.63,4.0,4.09,Quarterly,Bank Transfer,False,7.0,2021-08-20,No
+CUST-0076,44.0,Male,Riyadh,160.0,,2.0,3.52,Monthly,Bank Transfer,False,6.0,2023-03-10,Yes
+CUST-0077,31.0,Female,Jeddah,22.0,65.88,3.0,3.53,Monthly,Credit Card,False,7.0,2024-03-20,No
+CUST-0078,38.0,Male,Jeddah,48.0,125.17,2.0,2.91,Monthly,Credit Card,False,7.0,2020-02-12,No
+CUST-0079,43.0,Male,Riyadh,48.0,206.82,5.0,3.24,Annual,Credit Card,True,11.0,2020-10-01,No
+CUST-0080,33.0,Male,Riyadh,44.0,125.16,1.0,3.6,Annual,Credit Card,False,7.0,2024-11-03,No
+CUST-0081,41.0,Female,Riyadh,6.0,153.83,4.0,3.25,Quarterly,Bank Transfer,False,0.0,2023-04-11,No
+CUST-0082,29.0,Male,Jeddah,35.0,90.17,4.0,3.0,Monthly,Digital Wallet,False,7.0,2025-08-06,No
+CUST-0083,32.0,Female,Riyadh,45.0,134.28,1.0,5.0,Monthly,Credit Card,False,3.0,2023-06-23,No
+CUST-0084,32.0,Female,Dammam,69.0,183.3,2.0,5.0,Quarterly,Bank Transfer,False,9.0,2023-10-04,No
+CUST-0085,23.0,Female,Riyadh,38.0,200.23,2.0,3.77,Monthly,Digital Wallet,True,13.0,2025-03-02,No
+CUST-0086,41.0,Male,Riyadh,25.0,179.32,2.0,3.78,Quarterly,Digital Wallet,False,6.0,2023-10-18,No
+CUST-0087,31.0,Female,Jeddah,41.0,186.87,3.0,3.22,Quarterly,Digital Wallet,True,13.0,2021-11-23,No
+CUST-0088,36.0,Male,Jeddah,13.0,180.64,1.0,4.74,Monthly,Bank Transfer,True,8.0,2023-01-13,No
+CUST-0089,41.0,Male,Riyadh,7.0,49.74,2.0,3.53,Monthly,Digital Wallet,False,7.0,2021-05-09,No
+CUST-0090,41.0,Female,Riyadh,49.0,111.6,2.0,3.47,Monthly,Credit Card,False,10.0,2021-12-02,No
+CUST-0091,43.0,Female,Madinah,72.0,-25.0,2.0,4.38,Annual,Bank Transfer,False,11.0,2023-11-29,No
+CUST-0092,35.0,Female,Riyadh,61.0,166.72,2.0,3.39,Quarterly,Credit Card,False,11.0,2020-11-08,No
+CUST-0093,31.0,Male,Jeddah,43.0,128.47,3.0,3.44,Monthly,Bank Transfer,False,9.0,2023-11-12,No
+CUST-0094,35.0,Male,Jeddah,3.0,117.37,3.0,2.43,Annual,Bank Transfer,False,2.0,2023-05-11,No
+CUST-0095,18.0,Female,Riyadh,72.0,145.88,2.0,4.2,Monthly,Credit Card,False,7.0,2021-10-09,No
+CUST-0096,20.0,Male,Jeddah,33.0,179.67,1.0,5.0,Monthly,Digital Wallet,True,11.0,2020-04-04,No
+CUST-0097,21.0,Female,Madinah,21.0,187.74,3.0,3.93,Annual,Credit Card,False,6.0,2024-01-19,No
+CUST-0098,25.0,Male,Madinah,65.0,155.3,6.0,3.57,Monthly,Credit Card,False,12.0,2024-09-27,Yes
+CUST-0099,40.0,Male,Riyadh,54.0,104.22,1.0,3.47,Monthly,Credit Card,False,6.0,2024-03-13,No
+CUST-0100,26.0,Male,Riyadh,54.0,105.1,1.0,4.17,Quarterly,Bank Transfer,False,6.0,2022-06-02,No
+CUST-0101,32.0,Male,Riyadh,20.0,59.01,5.0,2.29,Monthly,Credit Card,False,6.0,2023-10-04,No
+CUST-0102,50.0,Male,Jeddah,72.0,181.98,2.0,3.59,Quarterly,Bank Transfer,False,10.0,2022-05-20,No
+CUST-0103,32.0,Female,Dammam,33.0,93.55,3.0,3.96,Monthly,Credit Card,False,2.0,2022-01-22,No
+CUST-0104,44.0,Female,Riyadh,39.0,117.36,1.0,4.09,Monthly,Digital Wallet,False,8.0,2021-11-18,No
+CUST-0105,26.0,Female,Riyadh,55.0,213.28,1.0,3.1,Monthly,Cash,True,8.0,2021-03-18,No
+CUST-0106,34.0,Female,Tabuk,48.0,148.4,2.0,,Monthly,Bank Transfer,False,5.0,2025-07-28,Yes
+CUST-0107,26.0,Male,Riyadh,13.0,54.66,4.0,2.28,Monthly,Digital Wallet,False,8.0,2023-10-31,No
+CUST-0108,32.0,Male,Jeddah,22.0,56.55,1.0,4.34,Monthly,Digital Wallet,False,10.0,2021-01-02,No
+CUST-0109,45.0,Male,Dammam,27.0,107.55,5.0,4.24,Annual,Cash,False,3.0,2024-12-21,No
+CUST-0110,18.0,Female,Riyadh,69.0,166.93,4.0,4.07,Monthly,Bank Transfer,False,9.0,2020-11-13,No
+CUST-0111,41.0,Male,Riyadh,52.0,138.84,1.0,2.79,Monthly,Digital Wallet,False,8.0,2023-05-31,No
+CUST-0112,39.0,Female,Riyadh,27.0,71.37,1.0,4.94,Monthly,Cash,False,10.0,2020-12-13,No
+CUST-0113,29.0,Female,Tabuk,53.0,152.01,2.0,4.35,Monthly,Digital Wallet,False,7.0,2022-01-28,No
+CUST-0114,20.0,Male,Riyadh,54.0,103.36,0.0,3.3,Monthly,Bank Transfer,False,7.0,2023-10-14,No
+CUST-0115,37.0,Male,Riyadh,29.0,168.65,2.0,3.54,Quarterly,Credit Card,True,14.0,2025-09-29,No
+CUST-0116,30.0,,Riyadh,30.0,154.96,0.0,8.5,Monthly,Credit Card,True,9.0,2025-09-13,No
+CUST-0117,39.0,Female,Riyadh,65.0,187.04,2.0,4.1,Annual,Bank Transfer,False,11.0,2025-02-23,No
+CUST-0118,36.0,Male,Dammam,41.0,137.27,3.0,2.61,Annual,Bank Transfer,False,3.0,2021-05-09,No
+CUST-0119,54.0,Female,Riyadh,11.0,188.27,0.0,4.7,Monthly,Bank Transfer,True,8.0,2020-07-15,No
+CUST-0120,33.0,Male,Jeddah,52.0,170.85,4.0,1.79,Monthly,Bank Transfer,False,4.0,2025-03-16,No
+CUST-0121,25.0,Male,Jeddah,43.0,215.74,3.0,3.32,Monthly,Bank Transfer,False,5.0,2025-04-22,No
+CUST-0122,38.0,Female,Madinah,37.0,135.88,4.0,3.92,Quarterly,Digital Wallet,True,13.0,2021-08-08,No
+CUST-0123,38.0,Female,Riyadh,53.0,102.46,1.0,4.03,Monthly,Credit Card,False,8.0,2020-02-10,No
+CUST-0124,51.0,Female,Madinah,66.0,206.03,0.0,3.98,Annual,Credit Card,True,13.0,2023-09-22,No
+CUST-0125,45.0,Male,Dammam,24.0,66.62,3.0,4.04,Annual,Digital Wallet,False,4.0,2020-06-08,No
+CUST-0126,40.0,Female,Riyadh,31.0,151.38,2.0,4.37,Annual,Digital Wallet,True,10.0,2020-03-26,No
+CUST-0127,52.0,Male,Madinah,14.0,159.91,0.0,,Quarterly,Cash,True,9.0,2025-05-22,No
+CUST-0128,23.0,Male,Madinah,47.0,164.12,2.0,4.31,Annual,Digital Wallet,True,14.0,2022-11-06,No
+CUST-0129,29.0,Male,Riyadh,29.0,113.63,3.0,4.16,Monthly,Digital Wallet,False,0.0,2020-08-23,No
+CUST-0130,26.0,Female,Tabuk,25.0,184.31,4.0,3.66,Monthly,Credit Card,True,7.0,2023-10-06,No
+CUST-0131,32.0,Male,Jeddah,51.0,142.94,2.0,3.91,Monthly,Bank Transfer,False,8.0,2022-02-14,Yes
+CUST-0132,21.0,Female,Jeddah,30.0,205.77,0.0,4.36,Annual,Credit Card,True,10.0,2023-01-31,No
+CUST-0133,43.0,Male,Tabuk,34.0,128.51,1.0,3.87,Quarterly,Bank Transfer,False,7.0,2025-03-02,No
+CUST-0134,34.0,Male,Jeddah,32.0,92.13,3.0,2.67,Annual,Cash,False,7.0,2021-05-14,No
+CUST-0135,20.0,Male,Madinah,19.0,165.14,2.0,3.12,Monthly,Bank Transfer,False,4.0,2023-09-19,No
+CUST-0136,25.0,Male,Riyadh,10.0,174.21,1.0,3.84,Annual,Bank Transfer,True,7.0,2024-10-05,No
+CUST-0137,39.0,Female,Madinah,60.0,70.81,1.0,,Monthly,Credit Card,False,8.0,2022-06-08,No
+CUST-0138,45.0,Female,Jeddah,7.0,42.62,2.0,4.68,Monthly,Credit Card,False,7.0,2025-07-30,No
+CUST-0139,58.0,Female,Riyadh,24.0,120.48,1.0,3.99,Annual,Credit Card,True,8.0,2022-07-30,No
+CUST-0140,68.0,,Jeddah,49.0,209.51,2.0,4.39,Monthly,Credit Card,True,12.0,2022-08-22,No
+CUST-0141,41.0,Female,Riyadh,10.0,76.74,35.0,4.72,Monthly,Cash,False,4.0,2025-01-30,Yes
+CUST-0142,25.0,Female,Riyadh,48.0,106.41,1.0,3.87,Quarterly,Bank Transfer,False,12.0,2023-08-28,No
+CUST-0143,18.0,Female,Riyadh,53.0,283.68,1.0,4.41,Monthly,Digital Wallet,True,12.0,2024-12-29,No
+CUST-0144,39.0,Female,Riyadh,48.0,227.01,4.0,3.02,Monthly,Digital Wallet,True,14.0,2024-07-17,Yes
+CUST-0145,27.0,Female,Riyadh,22.0,119.61,3.0,4.32,Monthly,Credit Card,False,8.0,2024-02-04,No
+CUST-0146,31.0,Male,Riyadh,2.0,39.61,2.0,,Monthly,Credit Card,False,3.0,2021-05-22,No
+CUST-0147,29.0,Male,Dammam,64.0,105.43,4.0,2.41,Annual,Digital Wallet,False,9.0,2022-04-17,No
+CUST-0148,34.0,Female,Dammam,24.0,97.69,3.0,3.56,Quarterly,Credit Card,False,5.0,2024-12-20,No
+CUST-0149,48.0,Female,Dammam,58.0,139.86,3.0,4.53,Monthly,Cash,False,8.0,2023-07-17,No
+CUST-0150,38.0,Female,Riyadh,15.0,21.53,2.0,3.62,Monthly,Credit Card,False,7.0,2021-08-11,No
+CUST-0151,34.0,Male,Madinah,12.0,76.89,2.0,4.03,Monthly,Digital Wallet,False,5.0,2021-11-18,No
+CUST-0152,25.0,Female,Jeddah,57.0,133.19,1.0,4.37,Quarterly,Digital Wallet,False,9.0,2024-06-17,No
+CUST-0153,18.0,Female,,68.0,222.27,0.0,3.63,Annual,Credit Card,True,11.0,2021-01-09,No
+CUST-0154,31.0,Female,Riyadh,62.0,194.73,3.0,3.79,Annual,Credit Card,True,11.0,2020-08-23,No
+CUST-0155,35.0,Female,Dammam,55.0,111.62,2.0,2.83,Monthly,Cash,False,14.0,2024-05-25,No
+CUST-0156,55.0,Female,Riyadh,18.0,83.61,4.0,2.77,Monthly,Credit Card,False,4.0,2021-08-28,No
+CUST-0157,37.0,Male,Jeddah,66.0,230.78,0.0,5.0,Monthly,Bank Transfer,True,12.0,2024-05-26,Yes
+CUST-0158,47.0,Male,Tabuk,49.0,145.07,1.0,4.25,Quarterly,Bank Transfer,False,11.0,2023-01-25,No
+CUST-0159,31.0,Male,Riyadh,13.0,122.13,3.0,3.26,Monthly,Credit Card,False,5.0,2025-09-26,No
+CUST-0160,23.0,Male,Riyadh,10.0,70.7,2.0,4.03,Quarterly,Digital Wallet,False,5.0,2023-01-07,No
+CUST-0161,25.0,Male,Tabuk,63.0,123.33,3.0,3.42,Quarterly,Digital Wallet,False,9.0,2024-12-26,No
+CUST-0162,28.0,Female,Jeddah,20.0,107.32,2.0,3.75,Monthly,Bank Transfer,False,4.0,2024-11-20,No
+CUST-0163,59.0,Male,Riyadh,56.0,152.98,2.0,4.17,Monthly,Digital Wallet,False,8.0,2021-03-21,No
+CUST-0164,27.0,Male,Madinah,10.0,150.8,0.0,3.83,Monthly,Credit Card,True,5.0,2025-09-22,No
+CUST-0165,45.0,Female,Madinah,21.0,120.76,4.0,3.21,Monthly,Credit Card,False,5.0,2024-04-15,Yes
+CUST-0166,26.0,Male,Jeddah,21.0,127.39,2.0,3.54,Monthly,Bank Transfer,False,6.0,2020-08-13,Yes
+CUST-0167,46.0,Female,Dammam,21.0,223.31,1.0,2.99,Annual,Cash,True,14.0,2020-01-13,No
+CUST-0168,40.0,Female,Riyadh,49.0,271.14,1.0,3.42,Monthly,Credit Card,True,12.0,2021-07-23,No
+CUST-0169,34.0,Male,Riyadh,66.0,197.28,2.0,4.76,Monthly,Credit Card,True,8.0,2020-02-04,No
+CUST-0170,36.0,Male,Jeddah,66.0,143.09,7.0,2.59,Quarterly,Bank Transfer,False,9.0,2022-01-20,No
+CUST-0171,29.0,Male,Riyadh,54.0,129.79,22.0,3.16,Annual,Digital Wallet,False,15.0,2025-09-23,No
+CUST-0172,41.0,Female,Dammam,15.0,168.07,1.0,3.02,Monthly,Credit Card,True,11.0,2022-10-02,No
+CUST-0173,31.0,Male,Madinah,70.0,124.28,1.0,3.95,Annual,Bank Transfer,False,8.0,2020-02-20,No
+CUST-0174,23.0,Male,Riyadh,40.0,62.01,1.0,5.0,Annual,Digital Wallet,False,8.0,2022-11-03,No
+CUST-0175,22.0,Female,Jeddah,40.0,202.24,4.0,3.06,Quarterly,Bank Transfer,True,9.0,2021-04-05,No
+CUST-0176,38.0,Male,Riyadh,51.0,99.21,3.0,4.31,Quarterly,Credit Card,False,5.0,2024-12-03,No
+CUST-0177,53.0,Female,Madinah,56.0,219.61,1.0,4.25,Monthly,Credit Card,True,12.0,2020-07-09,No
+CUST-0178,38.0,Female,Riyadh,69.0,118.11,3.0,3.77,Annual,Bank Transfer,False,10.0,2024-06-06,No
+CUST-0179,35.0,Female,Dammam,42.0,77.71,0.0,3.43,Monthly,Bank Transfer,False,3.0,2022-07-25,No
+CUST-0180,39.0,Male,Jeddah,44.0,211.6,2.0,4.35,Annual,Digital Wallet,True,9.0,2020-02-09,No
+CUST-0181,50.0,Female,Jeddah,54.0,134.68,0.0,4.08,Quarterly,Digital Wallet,False,8.0,2023-11-14,No
+CUST-0182,38.0,Female,Dammam,19.0,111.17,4.0,3.74,Monthly,Digital Wallet,False,4.0,2022-08-13,No
+CUST-0183,31.0,Female,Dammam,23.0,171.81,3.0,2.93,Monthly,Cash,False,6.0,2024-06-08,No
+CUST-0184,48.0,Female,Jeddah,46.0,130.31,1.0,4.14,Quarterly,Bank Transfer,False,5.0,2023-07-21,No
+CUST-0185,41.0,Female,,5.0,92.48,3.0,3.69,Quarterly,Bank Transfer,False,5.0,2024-07-11,Yes
+CUST-0186,53.0,Male,Tabuk,24.0,143.69,1.0,3.92,Monthly,Cash,True,6.0,2022-08-24,No
+CUST-0187,38.0,Female,Jeddah,52.0,82.16,3.0,3.72,Annual,Credit Card,False,12.0,2020-01-17,No
+CUST-0188,23.0,Male,Jeddah,71.0,203.5,1.0,3.85,Annual,Digital Wallet,False,6.0,2020-10-01,No
+CUST-0189,21.0,Male,Riyadh,38.0,79.48,1.0,3.6,Monthly,Digital Wallet,False,4.0,2022-08-21,No
+CUST-0190,54.0,Female,Madinah,29.0,65.36,3.0,4.5,Monthly,Credit Card,False,7.0,2022-04-14,Yes
+CUST-0191,55.0,Female,Jeddah,32.0,103.83,2.0,4.42,Monthly,Bank Transfer,False,10.0,2024-07-26,No
+CUST-0192,34.0,Male,Jeddah,50.0,206.84,5.0,2.41,Annual,Credit Card,True,13.0,2022-05-14,No
+CUST-0193,32.0,Female,Riyadh,40.0,82.41,4.0,3.55,Monthly,Credit Card,False,8.0,2024-12-11,Yes
+CUST-0194,52.0,Female,Madinah,2.0,146.53,4.0,2.7,Annual,Bank Transfer,True,7.0,2021-01-29,No
+CUST-0195,24.0,Male,Jeddah,39.0,155.93,1.0,3.25,Monthly,Credit Card,False,4.0,2022-03-19,No
+CUST-0196,26.0,Male,Dammam,29.0,73.69,2.0,4.41,Quarterly,Digital Wallet,False,5.0,2024-05-07,No
+CUST-0197,43.0,Male,Riyadh,51.0,77.32,2.0,2.63,Monthly,Cash,False,5.0,2020-09-17,No
+CUST-0198,32.0,Female,Tabuk,64.0,173.39,2.0,4.34,Monthly,Digital Wallet,False,6.0,2021-11-05,No
+CUST-0199,36.0,Male,Riyadh,70.0,164.23,2.0,3.58,Annual,Credit Card,False,11.0,2024-04-27,No
+CUST-0200,34.0,Male,Riyadh,44.0,96.68,6.0,2.48,Monthly,Credit Card,False,5.0,2023-05-21,Yes
+CUST-0201,40.0,Female,Madinah,27.0,44.32,2.0,4.01,Quarterly,Credit Card,False,95.0,2024-06-21,No
+CUST-0202,51.0,Male,Tabuk,32.0,79.14,1.0,4.4,Annual,Credit Card,False,3.0,2022-12-19,No
+CUST-0203,37.0,Female,Riyadh,13.0,,3.0,2.92,Annual,Cash,True,9.0,2024-12-09,No
+CUST-0204,43.0,Female,Jeddah,68.0,270.6,7.0,2.81,Annual,Bank Transfer,True,13.0,2025-01-16,No
+CUST-0205,18.0,Male,Dammam,62.0,101.92,0.0,4.37,Monthly,Credit Card,False,13.0,2025-08-08,No
+CUST-0206,35.0,Female,Madinah,62.0,135.24,0.0,3.48,Quarterly,Digital Wallet,False,10.0,2020-09-13,No
+CUST-0207,27.0,Female,Jeddah,24.0,120.03,1.0,3.91,Annual,Bank Transfer,False,8.0,2023-05-26,No
+CUST-0208,23.0,Male,Jeddah,24.0,98.06,2.0,4.64,Monthly,Credit Card,True,8.0,2020-08-27,No
+CUST-0209,26.0,Male,Dammam,62.0,174.38,4.0,4.27,Monthly,Credit Card,False,9.0,2021-04-25,No
+CUST-0210,32.0,Male,,40.0,72.61,3.0,3.93,Annual,Digital Wallet,False,5.0,2021-09-22,No
+CUST-0211,46.0,Male,Madinah,51.0,137.72,3.0,2.69,Monthly,Digital Wallet,False,7.0,2023-09-18,No
+CUST-0212,21.0,Male,Jeddah,36.0,203.23,1.0,4.34,Quarterly,Credit Card,True,10.0,2022-06-24,No
+CUST-0213,36.0,Female,Riyadh,32.0,143.16,2.0,4.29,Annual,Cash,False,4.0,2024-12-20,No
+CUST-0214,31.0,Female,,46.0,139.88,1.0,4.49,Quarterly,Digital Wallet,False,5.0,2021-09-18,Yes
+CUST-0215,32.0,Female,Madinah,59.0,136.69,2.0,4.25,Monthly,Digital Wallet,True,9.0,2023-07-20,No
+CUST-0216,47.0,Female,Madinah,25.0,70.03,1.0,4.26,Monthly,Credit Card,False,0.0,2024-05-21,No
+CUST-0217,42.0,Male,Riyadh,59.0,139.74,1.0,3.97,Monthly,Credit Card,False,6.0,2025-08-20,No
+CUST-0218,51.0,Female,Riyadh,18.0,167.98,3.0,3.06,Monthly,Digital Wallet,True,10.0,2021-05-30,No
+CUST-0219,34.0,Female,Dammam,30.0,204.72,0.0,3.07,Annual,Credit Card,True,6.0,2024-03-20,No
+CUST-0220,28.0,Female,Riyadh,66.0,170.23,3.0,3.68,Annual,Bank Transfer,False,6.0,2020-06-27,No
+CUST-0221,34.0,Female,Tabuk,69.0,167.2,2.0,3.86,Monthly,Digital Wallet,False,14.0,2023-02-15,No
+CUST-0222,39.0,Male,Jeddah,67.0,221.2,2.0,4.1,Monthly,Credit Card,True,12.0,2022-05-18,No
+CUST-0223,38.0,Female,Dammam,23.0,30.68,5.0,2.03,Annual,Digital Wallet,False,6.0,2025-07-05,No
+CUST-0224,24.0,,Madinah,61.0,121.16,0.0,4.72,Monthly,Cash,False,11.0,2024-06-12,Yes
+CUST-0225,37.0,Female,Jeddah,68.0,159.37,2.0,5.0,Quarterly,Digital Wallet,False,11.0,2025-05-01,No
+CUST-0226,39.0,Female,Riyadh,71.0,109.93,1.0,4.07,Monthly,Bank Transfer,False,6.0,2024-11-21,No
+CUST-0227,64.0,Male,Jeddah,2.0,94.29,0.0,4.26,Quarterly,Digital Wallet,False,3.0,2022-05-12,No
+CUST-0228,57.0,Female,Jeddah,54.0,161.19,0.0,4.5,Monthly,Bank Transfer,False,4.0,2024-03-20,No
+CUST-0229,27.0,Female,Jeddah,72.0,153.64,4.0,4.5,Quarterly,Digital Wallet,False,16.0,2020-03-04,No
+CUST-0230,33.0,Female,Jeddah,56.0,24.37,3.0,2.79,Monthly,,False,5.0,2023-03-17,No
+CUST-0231,20.0,Male,Tabuk,17.0,43.97,1.0,4.15,Quarterly,Digital Wallet,False,2.0,2020-04-09,No
+CUST-0232,30.0,Male,Jeddah,55.0,196.52,6.0,2.1,Monthly,Credit Card,False,6.0,2024-02-29,No
+CUST-0233,39.0,Male,Riyadh,8.0,144.67,2.0,3.38,Monthly,Credit Card,True,4.0,2025-07-23,Yes
+CUST-0234,49.0,Male,Jeddah,35.0,39.05,3.0,3.43,Quarterly,Credit Card,False,10.0,2023-12-01,No
+CUST-0235,28.0,Male,Jeddah,46.0,163.83,1.0,4.9,Monthly,Bank Transfer,False,14.0,2024-10-29,No
+CUST-0236,29.0,Female,Riyadh,33.0,191.77,0.0,5.0,Monthly,Bank Transfer,True,9.0,2021-05-07,No
+CUST-0237,18.0,Female,Riyadh,51.0,249.77,2.0,4.03,Monthly,Bank Transfer,True,9.0,2025-09-18,No
+CUST-0238,34.0,Male,Dammam,18.0,99.49,1.0,3.78,Monthly,Bank Transfer,False,0.0,2023-03-02,No
+CUST-0239,24.0,Female,,44.0,219.45,0.0,5.0,Monthly,Digital Wallet,True,11.0,2023-11-17,No
+CUST-0240,30.0,Male,Tabuk,47.0,134.41,3.0,3.18,Annual,Cash,False,7.0,2024-06-06,No
+CUST-0241,26.0,Female,Riyadh,46.0,230.01,1.0,3.65,Monthly,Credit Card,True,10.0,2023-09-05,No
+CUST-0242,35.0,Male,Riyadh,21.0,172.81,2.0,2.59,Annual,Digital Wallet,False,6.0,2021-10-27,Yes
+CUST-0243,18.0,Male,Dammam,22.0,128.19,5.0,3.81,Annual,Digital Wallet,False,6.0,2023-07-08,No
+CUST-0244,20.0,Female,Madinah,19.0,35.59,0.0,4.93,Monthly,Bank Transfer,False,6.0,2023-10-05,No
+CUST-0245,59.0,Male,Riyadh,34.0,208.03,0.0,5.0,Quarterly,Credit Card,True,10.0,2024-12-05,No
+CUST-0246,22.0,Male,Riyadh,43.0,242.25,0.0,3.4,Annual,Digital Wallet,True,9.0,2022-10-08,Yes
+CUST-0247,24.0,Male,Riyadh,27.0,141.79,4.0,4.13,Quarterly,Cash,False,7.0,2022-11-19,Yes
+CUST-0248,56.0,Female,Jeddah,30.0,88.07,2.0,3.79,Monthly,Digital Wallet,False,6.0,2022-11-22,No
+CUST-0249,68.0,Female,Jeddah,21.0,133.87,1.0,4.54,Monthly,Cash,False,7.0,2020-08-28,No
+CUST-0250,23.0,Male,Riyadh,16.0,205.07,4.0,2.11,Monthly,Cash,True,11.0,2020-07-08,Yes
+CUST-0251,32.0,Female,,48.0,297.84,2.0,4.69,Quarterly,Bank Transfer,True,8.0,2020-02-12,No
+CUST-0252,40.0,Female,Jeddah,59.0,193.65,3.0,3.97,Annual,Digital Wallet,True,9.0,2023-10-31,No
+CUST-0253,55.0,Male,Tabuk,21.0,75.34,1.0,3.99,Annual,Bank Transfer,False,3.0,2022-05-29,No
+CUST-0254,25.0,Male,Dammam,62.0,127.49,1.0,4.44,Monthly,Cash,False,7.0,2024-12-22,No
+CUST-0255,33.0,Female,Jeddah,42.0,99.04,2.0,3.24,Annual,Credit Card,False,9.0,2024-01-14,No
+CUST-0256,45.0,Female,Riyadh,13.0,53.15,4.0,2.8,Monthly,Bank Transfer,False,5.0,2020-10-24,No
+CUST-0257,41.0,Female,Riyadh,27.0,20.0,1.0,3.72,Annual,Digital Wallet,False,8.0,2020-07-29,No
+CUST-0258,32.0,Female,Riyadh,1.0,55.89,5.0,1.7,Monthly,Credit Card,False,4.0,2022-02-07,Yes
+CUST-0259,35.0,Male,Dammam,3.0,171.23,2.0,4.3,Annual,Digital Wallet,True,8.0,2025-04-17,No
+CUST-0260,21.0,Female,Madinah,25.0,80.24,1.0,4.79,Annual,Bank Transfer,False,8.0,2020-04-12,No
+CUST-0261,33.0,,Tabuk,33.0,1600.0,2.0,3.28,Monthly,Cash,False,7.0,2021-01-28,Yes
+CUST-0262,33.0,Male,Tabuk,58.0,134.27,0.0,4.53,Monthly,Digital Wallet,False,9.0,2020-03-03,No
+CUST-0263,39.0,Female,Tabuk,10.0,211.19,1.0,3.85,Annual,Credit Card,True,12.0,2022-05-18,Yes
+CUST-0264,30.0,Female,Tabuk,61.0,146.25,2.0,3.95,Monthly,Digital Wallet,False,9.0,2025-09-09,No
+CUST-0265,41.0,Male,Riyadh,17.0,117.62,3.0,3.05,Quarterly,Bank Transfer,False,4.0,2023-12-06,No
+CUST-0266,47.0,Male,Riyadh,10.0,175.77,6.0,2.05,Annual,Bank Transfer,True,6.0,2022-11-02,No
+CUST-0267,38.0,Male,Riyadh,51.0,174.01,2.0,4.42,Quarterly,Digital Wallet,False,10.0,2020-10-30,No
+CUST-0268,40.0,Male,Jeddah,56.0,133.56,1.0,3.98,Monthly,Digital Wallet,False,12.0,2022-01-16,No
+CUST-0269,37.0,Female,Riyadh,44.0,135.76,1.0,5.0,Monthly,Credit Card,False,7.0,2023-01-06,No
+CUST-0270,36.0,Male,Madinah,9.0,92.72,2.0,3.77,Monthly,Credit Card,False,7.0,2021-07-31,No
+CUST-0271,28.0,Male,Dammam,9.0,,1.0,3.42,Annual,Digital Wallet,False,0.0,2024-01-20,No
+CUST-0272,39.0,,,29.0,116.07,2.0,,Monthly,,False,6.0,2025-08-20,No
+CUST-0273,35.0,Male,Riyadh,33.0,184.5,4.0,3.59,Monthly,Bank Transfer,False,6.0,2021-03-08,No
+CUST-0274,59.0,Male,Riyadh,72.0,224.74,2.0,4.21,Monthly,Credit Card,True,12.0,2021-06-13,No
+CUST-0275,53.0,Male,Riyadh,21.0,107.78,2.0,4.51,Annual,Bank Transfer,False,11.0,2020-09-22,No
+CUST-0276,40.0,,Madinah,14.0,129.42,2.0,3.32,Monthly,Digital Wallet,False,4.0,2024-03-03,No
+CUST-0277,28.0,Male,Jeddah,69.0,270.81,0.0,4.22,Annual,Credit Card,True,13.0,2022-08-27,No
+CUST-0278,24.0,Female,Dammam,12.0,83.61,0.0,4.19,Annual,Bank Transfer,False,4.0,2021-08-18,No
+CUST-0279,49.0,Male,Riyadh,2.0,,1.0,3.18,Annual,Cash,False,0.0,2021-04-05,No
+CUST-0280,39.0,Male,Jeddah,31.0,207.18,4.0,3.01,Annual,Credit Card,True,8.0,2020-05-28,No
+CUST-0281,41.0,Male,Jeddah,29.0,,0.0,5.0,Annual,Digital Wallet,False,8.0,2022-09-26,No
+CUST-0282,18.0,Male,Dammam,45.0,170.95,1.0,4.17,Annual,Credit Card,False,6.0,2023-12-05,No
+CUST-0283,46.0,Female,Madinah,64.0,146.33,0.0,3.43,Monthly,Digital Wallet,False,7.0,2021-05-08,No
+CUST-0284,41.0,Male,Riyadh,68.0,179.79,1.0,3.01,Annual,Digital Wallet,False,13.0,2020-01-04,No
+CUST-0285,24.0,Male,Tabuk,21.0,61.53,5.0,3.98,Quarterly,,False,8.0,2022-09-20,No
+CUST-0286,31.0,Female,Riyadh,71.0,93.76,2.0,3.68,Quarterly,Credit Card,False,11.0,2023-11-20,No
+CUST-0287,39.0,Female,Madinah,46.0,214.73,2.0,3.32,Annual,Bank Transfer,True,10.0,2021-12-25,No
+CUST-0288,37.0,Female,Riyadh,6.0,160.42,1.0,3.84,Annual,Digital Wallet,True,7.0,2021-06-09,No
+CUST-0289,33.0,Male,Riyadh,68.0,127.6,3.0,2.5,Annual,Credit Card,False,8.0,2020-11-20,Yes
+CUST-0290,35.0,Female,Madinah,10.0,168.96,3.0,,Monthly,Credit Card,True,6.0,2024-04-15,No
+CUST-0291,33.0,Male,Riyadh,43.0,214.16,0.0,4.04,Monthly,Credit Card,False,5.0,2024-12-14,No
+CUST-0292,38.0,Female,Jeddah,57.0,246.91,5.0,3.79,Monthly,Cash,True,11.0,2024-06-04,No
+CUST-0293,52.0,Male,Jeddah,18.0,126.53,0.0,4.33,Monthly,Digital Wallet,False,2.0,2022-12-24,No
+CUST-0294,18.0,Female,Riyadh,20.0,121.54,1.0,4.95,Monthly,Digital Wallet,False,1.0,2024-02-29,No
+CUST-0295,33.0,Male,Dammam,35.0,160.28,2.0,3.91,Monthly,Digital Wallet,False,7.0,2022-04-13,No
+CUST-0296,38.0,Female,Madinah,64.0,133.75,4.0,3.73,Monthly,Bank Transfer,False,10.0,2020-02-21,No
+CUST-0297,39.0,Male,Madinah,17.0,101.78,3.0,3.93,Annual,,True,13.0,2022-02-10,No
+CUST-0298,32.0,Male,Riyadh,48.0,116.2,3.0,3.87,Monthly,Bank Transfer,False,6.0,2024-01-17,No
+CUST-0299,18.0,Male,Jeddah,33.0,134.71,2.0,3.97,Annual,Digital Wallet,False,7.0,2023-09-21,No
+CUST-0300,40.0,Male,Riyadh,9.0,45.96,2.0,3.59,Quarterly,Credit Card,False,5.0,2025-09-10,No
+CUST-0301,55.0,Female,,52.0,206.03,1.0,5.0,Monthly,Digital Wallet,True,12.0,2025-09-25,No
+CUST-0302,19.0,Female,Riyadh,60.0,111.79,4.0,2.59,Monthly,Digital Wallet,False,11.0,2021-05-24,No
+CUST-0303,46.0,Female,Tabuk,42.0,168.77,2.0,3.74,Monthly,Bank Transfer,False,9.0,2020-01-21,No
+CUST-0304,32.0,Female,Madinah,13.0,110.53,4.0,3.19,Annual,Bank Transfer,False,5.0,2021-07-29,No
+CUST-0305,35.0,Male,Madinah,12.0,106.0,1.0,,Monthly,Credit Card,False,4.0,2025-01-13,No
+CUST-0306,24.0,Male,Jeddah,31.0,210.86,1.0,3.74,Monthly,Cash,True,9.0,2024-09-04,No
+CUST-0307,32.0,Male,Jeddah,37.0,109.4,2.0,3.94,Annual,Cash,False,3.0,2020-07-26,No
+CUST-0308,50.0,Male,Jeddah,40.0,205.91,0.0,4.19,Annual,Cash,True,9.0,2020-12-02,No
+CUST-0309,42.0,Male,Jeddah,18.0,48.32,2.0,2.71,Monthly,Bank Transfer,False,3.0,2023-03-29,No
+CUST-0310,55.0,Male,Jeddah,37.0,119.17,6.0,2.63,Monthly,Credit Card,True,8.0,2023-10-19,No
+CUST-0311,49.0,Female,Riyadh,22.0,99.45,1.0,3.3,Monthly,Credit Card,False,6.0,2025-08-24,No
+CUST-0312,41.0,Female,Riyadh,50.0,221.34,1.0,2.89,Monthly,Credit Card,True,15.0,2024-05-04,Yes
+CUST-0313,55.0,Male,Tabuk,58.0,176.12,1.0,4.11,Monthly,Credit Card,False,7.0,2021-03-20,No
+CUST-0314,41.0,Male,Jeddah,47.0,261.7,1.0,4.34,Quarterly,Credit Card,True,12.0,2020-03-19,No
+CUST-0315,45.0,Female,,1.0,126.05,2.0,4.08,Annual,Cash,False,1.0,2023-08-23,No
+CUST-0316,33.0,Female,Riyadh,72.0,114.27,4.0,3.55,Quarterly,Credit Card,False,9.0,2023-03-08,No
+CUST-0317,37.0,Male,Jeddah,2.0,59.87,1.0,2.76,Quarterly,Credit Card,False,1.0,2025-04-19,No
+CUST-0318,28.0,Female,Riyadh,72.0,166.01,0.0,3.42,Monthly,Digital Wallet,False,12.0,2023-04-24,No
+CUST-0319,47.0,Female,Riyadh,3.0,161.92,6.0,3.9,Annual,Bank Transfer,False,2.0,2022-11-18,No
+CUST-0320,23.0,Male,Riyadh,38.0,163.6,0.0,3.62,Quarterly,Digital Wallet,False,9.0,2021-09-29,No
+CUST-0013,37.0,Male,Riyadh,39.0,176.8,0.0,4.38,Monthly,Digital Wallet,True,14.0,2025-05-24,No
+CUST-0028,40.0,,Jeddah,67.0,134.55,1.0,3.97,Annual,Bank Transfer,False,11.0,2023-05-28,No
+CUST-0065,44.0,Male,Jeddah,57.0,231.37,1.0,3.95,Monthly,Credit Card,True,11.0,2023-11-19,Yes
+CUST-0104,44.0,Female,Riyadh,39.0,117.36,1.0,4.09,Monthly,Digital Wallet,False,8.0,2021-11-18,No
+CUST-0156,55.0,Female,Riyadh,18.0,83.61,4.0,2.77,Monthly,Credit Card,False,4.0,2021-08-28,No
+CUST-0212,21.0,Male,Jeddah,36.0,203.23,1.0,4.34,Quarterly,Credit Card,True,10.0,2022-06-24,No
+CUST-0279,49.0,Male,Riyadh,2.0,,1.0,3.18,Annual,Cash,False,0.0,2021-04-05,No
+CUST-0302,19.0,Female,Riyadh,60.0,111.79,4.0,2.59,Monthly,Digital Wallet,False,11.0,2021-05-24,No
