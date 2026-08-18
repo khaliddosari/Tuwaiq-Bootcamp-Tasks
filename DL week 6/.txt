@@ -1,0 +1,450 @@
+===== CELL 0 [markdown] =====
+# Deep Learning Practical Lab
+## Keras Representation → Architecture Comparison → Model Optimization
+
+### Goal
+You will:
+1. Learn how a neural network is represented in TensorFlow/Keras.
+2. Choose **one classification dataset** and build shallow, medium, and deep networks on the same data.
+3. Compare their learning curves and generalization.
+4. Select one model and improve it using optimization / regularization techniques.
+5. Build a final optimized model and justify your decisions with evidence.
+
+> **Fair comparison rule:** Keep the dataset split and preprocessing fixed across experiments.
+
+===== CELL 1 [markdown] =====
+# Part 1 — Neural Networks in TensorFlow/Keras
+
+TensorFlow provides the deep-learning engine. Keras is the high-level API used to define and train models.
+
+The standard workflow is:
+
+**Define → Compile → Fit → Evaluate → Predict**
+
+===== CELL 2 [code] =====
+%matplotlib inline
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import tensorflow as tf
+
+from tensorflow import keras
+from tensorflow.keras import layers
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+SEED = 42
+np.random.seed(SEED)
+tf.random.set_seed(SEED)
+
+print("TensorFlow:", tf.__version__)
+
+===== CELL 3 [markdown] =====
+## 1.1 Define the Architecture
+
+Example:
+
+```python
+model = keras.Sequential([
+    layers.Input(shape=(10,)),
+    layers.Dense(64, activation="relu"),
+    layers.Dense(32, activation="relu"),
+    layers.Dense(1, activation="sigmoid")
+])
+```
+
+How to read it:
+
+- `Input(shape=(10,))` → 10 input features
+- `Dense(64)` → hidden layer with 64 neurons
+- `Dense(32)` → second hidden layer with 32 neurons
+- `Dense(1, sigmoid)` → binary-classification output
+
+Inside each Dense neuron:
+
+\[
+z = w^T x + b
+\]
+
+then:
+
+\[
+a = g(z)
+\]
+
+### Vocabulary
+
+| Concept | Meaning |
+|---|---|
+| Depth | Number of hidden layers |
+| Width | Number of neurons in a layer |
+| Parameters | Weights and biases learned from data |
+| Hyperparameters | Learning rate, batch size, layers, neurons, dropout, etc. |
+
+===== CELL 4 [markdown] =====
+## 1.2 Output Layer and Loss
+
+### Binary Classification
+```python
+layers.Dense(1, activation="sigmoid")
+loss="binary_crossentropy"
+```
+
+### Multiclass Classification
+```python
+layers.Dense(n_classes, activation="softmax")
+loss="sparse_categorical_crossentropy"
+```
+
+Use the multiclass option when the target contains integer class labels such as `0, 1, 2, ...`.
+
+===== CELL 5 [markdown] =====
+## 1.3 Compile
+
+```python
+model.compile(
+    optimizer=keras.optimizers.Adam(learning_rate=0.001),
+    loss="binary_crossentropy",
+    metrics=["accuracy"]
+)
+```
+
+- **Loss** → what the model minimizes
+- **Optimizer** → how gradients are used to update weights
+- **Learning rate** → size of each update
+- **Metric** → how we monitor performance
+
+===== CELL 6 [markdown] =====
+## 1.4 Fit
+
+```python
+history = model.fit(
+    X_train, y_train,
+    validation_data=(X_val, y_val),
+    epochs=50,
+    batch_size=32
+)
+```
+
+During training:
+
+**Forward Pass → Loss → Backpropagation → Gradients → Weight Update**
+
+`history.history` stores training and validation loss/accuracy across epochs.
+
+===== CELL 7 [markdown] =====
+## 1.5 Evaluate and Inspect
+
+```python
+model.summary()
+model.count_params()
+
+model.evaluate(X_test, y_test)
+model.predict(X_new)
+```
+
+`summary()` shows the architecture and parameter count.  
+`evaluate()` is used for final performance on unseen test data.
+
+===== CELL 8 [markdown] =====
+# Part 2 — Task A: Choose and Prepare One Dataset
+
+Choose **one classification dataset** and use it for the entire lab.
+
+You may use Kaggle, UCI, Scikit-learn, or another instructor-approved public dataset.
+
+### Required dataset description
+Write:
+
+1. Dataset name
+2. What one row represents
+3. Target variable
+4. Binary or multiclass
+5. Number of rows
+6. Number of input features
+7. Class distribution
+8. Required preprocessing
+
+===== CELL 9 [code] =====
+# TODO: Load your dataset.
+from sklearn.datasets import load_breast_cancer
+
+data = load_breast_cancer()
+df = pd.DataFrame(data.data, columns=data.feature_names)
+df["TARGET"] = data.target
+
+# Examples:
+# df = pd.read_csv("data.csv")
+# display(df.head())
+
+===== CELL 10 [code] =====
+# TODO: Inspect the dataset.
+
+print(df.shape)
+display(df.head())
+print(df.dtypes)
+print(df.isna().sum())
+print(df.duplicated().sum())
+print(df["TARGET"].value_counts())
+print(df["TARGET"].value_counts(normalize=True))
+
+===== CELL 11 [code] =====
+# TODO: Define input features X and target y.
+
+X = df.drop(columns=["TARGET"])
+y = df["TARGET"]
+
+# Example:
+# X = df.drop(columns=["TARGET"])
+# y = df["TARGET"]
+
+===== CELL 12 [markdown] =====
+## Preprocessing Rules
+
+Perform the preprocessing required by your data:
+
+- Handle missing values
+- Encode categorical features
+- Correct data types
+- Scale numerical features when appropriate
+
+> **Avoid data leakage:** fit preprocessing objects such as `StandardScaler` on training data only.
+
+===== CELL 13 [code] =====
+# TODO: Create fixed Train / Validation / Test splits.
+# Suggested: 70% / 15% / 15%
+#
+X_train, X_temp, y_train, y_temp = train_test_split(
+    X, y, test_size=0.30, random_state=SEED, stratify=y
+)
+
+X_val, X_test, y_val, y_test = train_test_split(
+    X_temp, y_temp, test_size=0.50,
+    random_state=SEED, stratify=y_temp
+)
+
+===== CELL 14 [code] =====
+# TODO: Scale features if appropriate.
+#
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_val = scaler.transform(X_val)
+X_test = scaler.transform(X_test)
+
+===== CELL 15 [code] =====
+# TODO: Determine output configuration after preparing y_train.
+#
+input_dim = X_train.shape[1]
+n_classes = len(np.unique(y_train))
+
+if n_classes == 2:
+    output_units = 1
+    output_activation = "sigmoid"
+    loss_function = "binary_crossentropy"
+else:
+    output_units = n_classes
+    output_activation = "softmax"
+    loss_function = "sparse_categorical_crossentropy"
+
+print(input_dim, n_classes, output_activation, loss_function)
+
+===== CELL 16 [markdown] =====
+# Part 3 — Learning-Curve Helper
+
+Use the same plotting function for every experiment.
+
+===== CELL 17 [code] =====
+def plot_learning_curves(history, title):
+    h = history.history
+
+    plt.figure(figsize=(7, 4))
+    plt.plot(h["loss"], label="Train Loss")
+    plt.plot(h["val_loss"], label="Validation Loss")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.title(title + " — Loss")
+    plt.legend()
+    plt.grid(alpha=0.3)
+    plt.show()
+
+    if "accuracy" in h:
+        plt.figure(figsize=(7, 4))
+        plt.plot(h["accuracy"], label="Train Accuracy")
+        plt.plot(h["val_accuracy"], label="Validation Accuracy")
+        plt.xlabel("Epoch")
+        plt.ylabel("Accuracy")
+        plt.title(title + " — Accuracy")
+        plt.legend()
+        plt.grid(alpha=0.3)
+        plt.show()
+
+===== CELL 18 [markdown] =====
+# Part 4 — Task B: Compare Network Depth
+
+Build **three models** using the same dataset:
+
+### M1 — Shallow
+**1 hidden layer**
+
+### M2 — Medium
+**3 hidden layers**
+
+### M3 — Deep
+**5 or more hidden layers**
+
+For this stage, keep the following fixed:
+
+- Dataset split
+- Preprocessing
+- Optimizer
+- Learning rate
+- Batch size
+- Maximum epochs
+
+Do **not** use Dropout or BatchNorm yet.
+
+The main variable being tested is **network architecture / depth**.
+
+===== CELL 19 [markdown] =====
+## Architecture Plan
+
+Complete before training:
+
+| Model | Hidden Layers | Neurons per Layer | Activation | Parameters |
+|---|---:|---|---|---:|
+| Shallow | | | | |
+| Medium | | | | |
+| Deep | | | | |
+
+### Prediction
+Before running the models, write what you expect to happen as depth increases.
+
+===== CELL 20 [markdown] =====
+## Task B1 — Shallow Network
+
+===== CELL 21 [code] =====
+def build_shallow_model(input_dim, output_units, output_activation):
+    model = keras.Sequential([
+        layers.Input(shape=(input_dim,)),
+
+        # TODO: ONE hidden Dense layer
+
+        # TODO: Output layer
+    ])
+    return model
+
+===== CELL 22 [code] =====
+# TODO: Build, compile, summarize, train, plot, and evaluate M1.
+#
+# m1 = build_shallow_model(...)
+# m1.compile(
+#     optimizer=keras.optimizers.Adam(learning_rate=0.001),
+#     loss=loss_function,
+#     metrics=["accuracy"]
+# )
+# m1.summary()
+#
+# h1 = m1.fit(
+#     X_train, y_train,
+#     validation_data=(X_val, y_val),
+#     epochs=50,
+#     batch_size=32,
+#     verbose=1
+# )
+#
+# plot_learning_curves(h1, "M1 Shallow")
+# m1.evaluate(X_test, y_test)
+
+===== CELL 23 [markdown] =====
+### M1 Analysis
+- Did training loss decrease?
+- Did validation loss decrease?
+- Is there a large train/validation gap?
+- Does the model underfit, overfit, or generalize reasonably well?
+
+===== CELL 24 [markdown] =====
+## Task B2 — Medium Network
+
+===== CELL 25 [code] =====
+def build_medium_model(input_dim, output_units, output_activation):
+    model = keras.Sequential([
+        layers.Input(shape=(input_dim,)),
+
+        # TODO: THREE hidden Dense layers
+
+        # TODO: Output layer
+    ])
+    return model
+
+===== CELL 26 [code] =====
+# TODO: Train M2 using the SAME optimizer, LR, batch size,
+# epochs, data split, and preprocessing used for M1.
+
+===== CELL 27 [markdown] =====
+### M2 Analysis
+Compare with M1:
+
+- Did training performance improve?
+- Did validation performance improve?
+- Did the generalization gap change?
+- Was the extra complexity useful?
+
+===== CELL 28 [markdown] =====
+## Task B3 — Deep Network
+
+===== CELL 29 [code] =====
+def build_deep_model(input_dim, output_units, output_activation):
+    model = keras.Sequential([
+        layers.Input(shape=(input_dim,)),
+
+        # TODO: AT LEAST FIVE hidden Dense layers
+        # You may gradually reduce width:
+        # 256 -> 128 -> 64 -> 32 -> 16
+
+        # TODO: Output layer
+    ])
+    return model
+
+===== CELL 30 [code] =====
+# TODO: Train M3 with the SAME training configuration.
+# Do not add regularization yet.
+
+===== CELL 31 [markdown] =====
+### M3 Analysis
+
+- Did deeper achieve lower training loss?
+- Did validation improve too?
+- Is there evidence of overfitting?
+- Around which epoch did validation stop improving?
+- Did deeper automatically mean better?
+
+===== CELL 32 [markdown] =====
+# Part 5 — Architecture Comparison
+
+Create a comparison table:
+
+| Model | Hidden Layers | Parameters | Best Val Accuracy | Min Val Loss | Test Accuracy | Interpretation |
+|---|---:|---:|---:|---:|---:|---|
+| M1 Shallow | | | | | | |
+| M2 Medium | | | | | | |
+| M3 Deep | | | | | | |
+
+### Required conclusion
+
+Explain:
+
+1. Which model learned the training data best?
+2. Which model generalized best?
+3. Which model showed the largest train/validation gap?
+4. Was the deepest model always the best?
+5. Which architecture will you take to the optimization stage, and why?
+
+===== CELL 33 [code] =====
+architecture_results = pd.DataFrame(columns=[
+    "Model", "Hidden Layers", "Parameters",
+    "Best Val Accuracy", "Min Val Loss",
+    "Test Accuracy", "Interpretation"
+])
+
+architecture_results
+
